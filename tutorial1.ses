@@ -1,0 +1,152 @@
+
+(session tutorial1.ses
+  (base_design tutorial1.dsn)
+  (placement
+    (resolution um 10)
+    (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+      (place R2 1369850 -1198400 front 180)
+    )
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+      (place C1 1395250 -1236500 front 180)
+    )
+    (component MountingHole:MountingHole_3.2mm_M3
+      (place MH1 1350000 -1100000 front 0)
+    )
+    (component LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (place D1 1369850 -1179350 front 180)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place J1 1401750 -1274600 front 90)
+    )
+    (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::1
+      (place R1 1490500 -1185700 front 270)
+    )
+    (component "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+      (place U1 1433350 -1185700 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(6.0.6)")
+    )
+    (library_out 
+      (padstack "Via[0-1]_605:300_um"
+        (shape
+          (circle F.Cu 6050 0 0)
+        )
+        (shape
+          (circle B.Cu 6050 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /INPUT
+        (wire
+          (path F.Cu 1524
+            1439700 -1210450
+            1439700 -1213403
+            1448857 -1222560
+            1455923 -1222560
+            1479424 -1199059
+            1479424 -1187651
+            1490500 -1176575
+          )
+        )
+      )
+      (net "Net-(J1-Pad2)"
+        (wire
+          (path F.Cu 1524
+            1490500 -1194825
+            1427150 -1258175
+            1427150 -1274600
+          )
+        )
+      )
+      (net VCC
+        (wire
+          (path F.Cu 1524
+            1378980 -1198400
+            1378975 -1198400
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1378980 -1198400
+            1414300 -1198400
+            1414300 -1210450
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 1524
+            1403880 -1236500
+            1403875 -1236500
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            1403880 -1236500
+            1414300 -1236500
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 4000
+            1414300 -1230150
+            1414300 -1210450
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 4000
+            1414300 -1236500
+            1414300 -1230150
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 4000
+            1401750 -1274600
+            1401750 -1262050
+            1401600 -1261900
+            1401600 -1255550
+            1414300 -1242850
+            1414300 -1236500
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 4000
+            1414300 -1236500
+            1414300 -1230150
+          )
+          (type protect)
+        )
+      )
+      (net "Net-(D1-Pad2)"
+        (wire
+          (path F.Cu 1524
+            1361100 -1179350
+            1360725 -1179725
+            1360725 -1198400
+          )
+        )
+      )
+      (net "Net-(D1-Pad1)"
+        (wire
+          (path F.Cu 1524
+            1452400 -1210450
+            1452400 -1207450
+            1424300 -1179350
+            1378600 -1179350
+          )
+        )
+      )
+    )
+  )
+)
